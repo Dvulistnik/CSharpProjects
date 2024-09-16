@@ -26,7 +26,7 @@ namespace lab1
         }
         public void BecomeOlder()
         {
-            age--;
+            age++;
         }
     }
 }
