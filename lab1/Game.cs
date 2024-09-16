@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace lab1
 {
-    internal class Game
+    public class Game
     {
+        public string title;
+        public Game(string title)
+        {
+            this.title = title;
+        }
     }
 }
