@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lab5
+{
+    public class ITStudent : Student, ISpecialist
+    {
+        public ITStudent(string name, uint age) : base(name, age)
+        {
+        }
+
+        void ISpecialist.DoSomthing()
+        {
+            Console.WriteLine("Hello world!");
+        }
+
+        public void WriteInfo()
+        {
+            Console.WriteLine($"ITStudent Имя {Name}, Возраст: {Age}");
+        }
+    }
+}
